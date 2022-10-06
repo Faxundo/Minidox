@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "minidox",
+  "version": "${version}",
+
+  "name": "Minidox",
+  "description": "",
+  "authors": [
+    "Faxu"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": ""
+  },
+
+  "license": "MIT License",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.faxu.minidox.Minidox"
+    ],
+    "client": [
+      "net.faxu.minidox.MinidoxClient"
+    ]
+  },
+  "mixins": [
+    "minidox.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
