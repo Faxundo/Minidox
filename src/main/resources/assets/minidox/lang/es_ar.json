@@ -1,4 +1,8 @@
 {
   "entity.minidox.minidox":"Minidox",
-  "item.minidox.minidox_spawn_egg": "El Huevo de Minidox"
+  "item.minidox.minidox_spawn_egg": "El Huevo de Minidox",
+  "text.autoconfig.minidox.title": "Minidox",
+  "text.autoconfig.minidox.option.activateSoundIdle": "Sonido de Respiración",
+  "text.autoconfig.minidox.option.activateSoundDeath": "Sonido de Muerte",
+  "text.autoconfig.minidox.option.activateSoundHurt": "Sonido de Herida"
 }

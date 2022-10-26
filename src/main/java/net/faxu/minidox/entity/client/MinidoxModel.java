@@ -16,7 +16,7 @@ public class MinidoxModel extends AnimatedGeoModel<MinidoxEntity> {
 
     @Override
     public Identifier getTextureResource(MinidoxEntity object) {
-        return new Identifier(Minidox.MOD_ID, "textures/entity/minidox.png");
+        return MinidoxRenderer.LOCATION_VARIANT.get(object.getVariant());
     }
 
     @Override

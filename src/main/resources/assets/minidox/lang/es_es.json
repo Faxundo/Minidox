@@ -1,4 +1,8 @@
 {
   "entity.minidox.minidox":"Caballero de Netherite",
-  "item.minidox.minidox_spawn_egg": "Engendro del Caballero de Netherite"
+  "item.minidox.minidox_spawn_egg": "Engendro del Caballero de Netherite",
+  "text.autoconfig.minidox.title": "Caballero de Netherite",
+  "text.autoconfig.minidox.option.activateSoundIdle": "Sonido de Respiración",
+  "text.autoconfig.minidox.option.activateSoundDeath": "Sonido de Muerte",
+  "text.autoconfig.minidox.option.activateSoundHurt": "Sonido de Herida"
 }

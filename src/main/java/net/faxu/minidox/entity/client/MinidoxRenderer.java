@@ -1,7 +1,9 @@
 package net.faxu.minidox.entity.client;
 
+import com.google.common.collect.Maps;
 import net.faxu.minidox.Minidox;
 import net.faxu.minidox.entity.custom.MinidoxEntity;
+import net.faxu.minidox.entity.variant.MinidoxVariant;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
@@ -9,11 +11,26 @@ import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Util;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
 
+import java.util.Map;
+
 public class MinidoxRenderer extends GeoEntityRenderer<MinidoxEntity> {
+
+    public static final Map<MinidoxVariant, Identifier> LOCATION_VARIANT =
+            Util.make(Maps.newEnumMap(MinidoxVariant.class), (map) -> {
+                map.put(MinidoxVariant.LEVEL_ONE,
+                        new Identifier(Minidox.MOD_ID, "textures/entity/minidox_nivel_uno.png"));
+                map.put(MinidoxVariant.LEVEL_TWO,
+                        new Identifier(Minidox.MOD_ID, "textures/entity/minidox_nivel_dos.png"));
+                map.put(MinidoxVariant.LEVEL_THREE,
+                        new Identifier(Minidox.MOD_ID, "textures/entity/minidox_nivel_tres.png"));
+                map.put(MinidoxVariant.EVIL,
+                        new Identifier(Minidox.MOD_ID, "textures/entity/minidox_evil.png"));
+            });
 
     private float rotationYaw;
 
@@ -25,7 +42,7 @@ public class MinidoxRenderer extends GeoEntityRenderer<MinidoxEntity> {
 
     @Override
     public Identifier getTextureResource(MinidoxEntity entity) {
-        return new Identifier(Minidox.MOD_ID, "textures/entity/minidox.png");
+        return LOCATION_VARIANT.get(entity.getVariant());
     }
 
     @Override
@@ -69,4 +86,6 @@ public class MinidoxRenderer extends GeoEntityRenderer<MinidoxEntity> {
         renderRecursively(model.topLevelBones.get(0), matrixStackIn, vertexBuilder, packedLightIn, OverlayTexture.packUv(0,
                 OverlayTexture.getV(animatable.hurtTime > 0)), red, green, blue, alpha);
     }
+
+
 }

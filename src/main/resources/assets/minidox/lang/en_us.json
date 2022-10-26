@@ -1,4 +1,8 @@
 {
   "entity.minidox.minidox":"Knigth of Netherite",
-  "item.minidox.minidox_spawn_egg": "Knigth of Netherite Spawn Egg"
+  "item.minidox.minidox_spawn_egg": "Knigth of Netherite Spawn Egg",
+  "text.autoconfig.minidox.title": "Knight of Netherite",
+  "text.autoconfig.minidox.option.activateSoundIdle": "Idle Sound",
+  "text.autoconfig.minidox.option.activateSoundDeath": "Death Sound",
+  "text.autoconfig.minidox.option.activateSoundHurt": "Hurt Sound"
 }

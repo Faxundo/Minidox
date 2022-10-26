@@ -3,7 +3,7 @@
   "id": "minidox",
   "version": "${version}",
 
-  "name": "Minidox",
+  "name": "Knight of Netherite",
   "description": "",
   "authors": [
     "Faxu"
@@ -14,7 +14,7 @@
   },
 
   "license": "MIT License",
-  "icon": "",
+  "icon": "assets/minidox/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.faxu.minidox.MinidoxClient"
+    ],
+    "modmenu": [
+      "net.faxu.minidox.config.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -37,5 +40,17 @@
   },
   "suggests": {
     "another-mod": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": [],
+      "parent": {
+        "id": "minidox",
+        "name": "Knight of Netherite",
+        "description": "",
+        "icon": "assets/minidox/icon.png",
+        "badges": []
+      }
+    }
   }
 }

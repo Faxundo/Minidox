@@ -1,0 +1,34 @@
+{
+  "minidox.death": {
+    "subtitle": "subtitle.minidox.minidox.death",
+    "sounds": [
+      {
+        "name": "minidox:death"
+      }
+    ]
+  },
+  "minidox.hurt": {
+    "subtitle": "subtitle.minidox.minidox.hurt",
+    "sounds": [
+      {
+        "name": "minidox:hurt"
+      }
+    ]
+  },
+  "minidox.idle": {
+    "subtitle": "subtitle.minidox.minidox.idle",
+    "sounds": [
+      {
+        "name": "minidox:idle"
+      }
+    ]
+  },
+  "minidox.attack": {
+    "subtitle": "subtitle.minidox.minidox.attack",
+    "sounds": [
+      {
+        "name": "minidox:attack"
+      }
+    ]
+  }
+}
